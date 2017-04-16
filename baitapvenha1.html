@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HuyLê-BàiTậpVềNhà1</title>
+</head>
+<body>
+<br>
+<br>
+<input type="text" id="a" placeholder="nhập	số a"></input>
+<br>
+<br>
+<input type="text" id="b" placeholder="nhập số b"></input>
+<br>
+<br>
+<input type="text" id="tinh" placeholder="tính"></input>
+<br>
+<br>
+<input type="text" id="ketqua" placeholder="kết quả" readonly></input>
+<br>
+<br>
+<button type"button" id="btnclick" onclick="tinhtoan()">Tính</button>
+<button type="button" id="clear" onclick="Clear()">clear</button>
+<script type="text/javascript" src=js/jquery-3.2.1.min.js></script>
+<script type="text/javascript">
+//Hàm xóa text
+	function Clear() {
+     document.getElementById("a").value = "";
+     document.getElementById("b").value = "";
+     document.getElementById("tinh").value = "";
+     document.getElementById("ketqua").value = "";
+}
+//Hàm phép nhân
+	function phepnhan(){
+		var a= document.getElementById('a').value;
+		var b= document.getElementById('b').value;
+		a = parseInt(a);
+		b = parseInt(b);
+		return ketqua.value=a*b;}
+//Hàm phép nhân
+	function phepcong(){
+		var a= document.getElementById('a').value;
+		var b= document.getElementById('b').value;
+		a = parseInt(a);
+		b = parseInt(b);
+		return ketqua.value=a+b ;}
+//Hàm phép trừ
+	function pheptru(){
+		var a= document.getElementById('a').value;
+		var b= document.getElementById('b').value;
+		a = parseInt(a);
+		b = parseInt(b);
+		return ketqua.value=a-b;}
+//Hàm phép chia
+	function phepchia(){
+		var a= document.getElementById('a').value;
+		var b= document.getElementById('b').value;
+		a = parseInt(a);
+		b = parseInt(b);
+		return ketqua.value=a/b;}
+//Hàm tính toán
+	function tinhtoan(){
+		var a= document.getElementById('a').value;
+		var b= document.getElementById('b').value;
+		var tinh= document.getElementById('tinh').value;
+		var cong= "+";
+		var tru = "-";
+		var nhan= "x";
+		var chia= ":";
+		switch(tinh){
+			case a+cong+b:{phepcong();
+				break;}
+			case a+tru+b:{pheptru();
+				break;}
+			case a+nhan+b:{phepnhan();
+				break;}
+			case a+chia+b:{phepchia();
+				break;}
+			default:{ketqua.value='MATH ERROR'}
+			}
+		}
+</script>
+</body>
+</html>
