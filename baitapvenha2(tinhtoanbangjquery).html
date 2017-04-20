@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HuyLê-bàitậpvềnhà2</title>
+	<input type="text" id="a" placeholder="Nhập số a"/>
+	<input type="text" id="pheptinh" placeholder="Nhập phép tính"/>
+	<input type="text" id="b" placeholder="Nhập số b"/>
+	<input type="test" id="ketqua" placeholder="Kết quả" readonly />
+	<button type="button" id="tinhtoan">Tính</button>
+</head>
+<body>
+<!-- Chèn Jquery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!--Hàm jquery-->
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		var a=$('#a').val();
+		var b=$('#b').val();
+		var tinh=$('#pheptinh').val();
+		a=parseInt(a);
+		b=parseInt(b);
+		var tinh=$('#pheptinh').val();
+		switch(tinh){
+			case tinh='+':{ketqua.value=a+b;
+			break;}
+			case tinh='-':{ketqua.value=a-b;
+			break;}
+				case tinh='x':{ketqua.value=a*b;
+			break;}
+			case tinh=':':{ketqua.value=a/b;
+				break;}
+			default:{ketqua.value="MATH ERROR";}
+	}
+	})
+	})
+</script>
+<!--Kết thúc hàm-->
+</body>
+</html>
