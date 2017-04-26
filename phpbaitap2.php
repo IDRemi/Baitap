@@ -6,7 +6,8 @@
 <body>
 
 <!-- Menu -->
-<ul id="menu"><?php
+<ul id="menu">
+	<?php
 	$mang=array("Trang chủ","Thông tin","Sản phẩm","Liên hệ");
 	foreach ($mang as $value) {
 		echo "<li id='menucon'><p>$value</p></li>";
