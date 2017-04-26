@@ -61,7 +61,7 @@ foreach ($mangsp as $key=>$value) {
 <style type="text/css">
 	
 	#danhmucsanpham{
-		width:260px;
+		width:280px;
 		float:left;
 		margin-left:60px;
 	}
