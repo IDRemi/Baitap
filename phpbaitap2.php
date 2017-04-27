@@ -64,7 +64,9 @@ foreach ($mangsp as $key=>$value) {
 	#danhmucsanpham{
 		width:280px;
 		float:left;
-		margin-left:60px;
+		margin:60px;
+		border:1px solid gray;
+		padding-right:20px;
 	}
 	p#TenSP{
 		color:red;
@@ -80,7 +82,7 @@ foreach ($mangsp as $key=>$value) {
 		padding-left: 35px;
 	}
 	img{
-		padding-top: 100px;
+		padding-top: 50px;
 	}
 </style>
 <!-- Kết thúc style -->
