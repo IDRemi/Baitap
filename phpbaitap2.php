@@ -51,8 +51,8 @@ foreach ($mangsp as $key=>$value) {
 	echo "<div id='danhmucsanpham'>
 	<img src='$value[1]'>
 	<br><br>
-	<p id='a'>Tên Sản Phẩm : $value[0]</p>
-	<p id='b'>Giá : $value[2]</p>
+	<p id='TenSP'>Tên Sản Phẩm : $value[0]</p>
+	<p id='Gia'>Giá : $value[2]</p>
 	</div>";
 }
 ?>
@@ -66,13 +66,13 @@ foreach ($mangsp as $key=>$value) {
 		float:left;
 		margin-left:60px;
 	}
-	p#a{
+	p#TenSP{
 		color:red;
 		font-size:20px;
 		font-weight: bold;
 		padding-left: 35px;
 	}
-	p#b{
+	p#Gia{
 		color: black;
 		font-weight: bold;
 		font-style: italic;
